@@ -5,6 +5,12 @@
 \usepackage{musicography}
 
 \newtheorem{definition}{Definition}
+\newcommand{\muskern}{\kern-.15ex }
+\makeatletter
+\newcommand\dynmark[1]{{\normalfont\bfseries\itshape
+  \@tfor\next:=#1\do{\put@muskern\next}\/}}
+\newcommand{\put@muskern}{\let\put@muskern\muskern}
+\makeatother
 
 \begin{document}
     \chapter{Fundamentals}
