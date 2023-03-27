@@ -41,13 +41,27 @@ A key signature can be quickly identified with the following mnemonic:
 \end{itemize}
 
 \section{Minor scales}
-In contrast to major scales, there are 3 different minor scales. They all follow the following formulas, while the melodic minor is only used as an \emph{ascending} scale (the \emph{descending} part is the same as the natural minor scale).
+In contrast to major scales, there are 3 different minor scale forms. They all follow the following formulas, while the melodic minor is only used as an \emph{ascending} scale (the \emph{descending} part is the same as the natural minor scale).
 \begin{figure}
     \begin{center}
         \includegraphics[width=0.8\textwidth]{img/minorscales}
         \caption{Minor scales}
     \end{center}
 \end{figure}
+
+\subsection{Harmonic minor scale}
+The harmonic minor scale was born as a way to obtain a stronger resolution to the tonic. In fact, the lowered $\hat 7$ scale degree in the natural minor scale leads to a steep resolution to the tonic (a whole step).
+
+So, the harmonic minor scale \emph{raises} the $\hat 7$ scale degree so as to obtain a so-called \textbf{leading tone}. In this way we are able to use a smoother resolution to the tonic from the $\hat 7$ scale degree.
+
+The scale is called \emph{harmonic} minor, because the chords usually come from this harmonic scale (if this is the case, the dominant triad is the same as its major scale counterpart, and they fulfill the same role; the other chords are different between the two modes).
+
+\subsection{Melodic minor scale}
+The melodic minor scale shows its purpose in a similar manner as the harmonic minor scale. If we were to use an harmonic minor scale for a resolution then we probably want a passage with ends with $\hat 6 \hat 7 \hat 8$. Note however that in this case we have the same problem as before: the distance between $\hat 6$ and $\hat 7$ is too steep in the harmonic minor scale.
+
+Therefore, we \emph{raise} also the $\hat 6$ scale degree, obtaining the melodic minor scale.
+
+The scale is called \emph{melodic} minor because it shows its purpose during melodic passages which lead to a tonic resolution. In the Common Practice period (1600-1900), minor melodies often followed this scale pattern.
 
 \subsection{Key signatures}
 In respect to the major keys, minor keys can be derived by adding 3 flats (or subtracting sharps and adding flats if needed).
@@ -85,9 +99,92 @@ The circle of fifths is a convenient aid for the visualization of both minor and
     \end{center}
 \end{figure}
 
-\section{Key signature identification}
-Given a piece of sheet music we can devise its key signature as follows:
+\section{Key identification}
+\begin{definition}[Key ($\approx$)]
+    The \textbf{tonic} and the \textbf{mode} the piece ``is in''.
+\end{definition}
+
+What does it mean for a piece to ``be in a key'' (say, the key of C Major)? It means\footnote{Assuming we are talking about \emph{tonal music}.}:
+\begin{itemize}
+    \item The most important note in the piece (the one that feels like ``home'') is the first scale degree of our scale.
+    \item Notes from the key scale (say, the C Major scale) seem like to belong to the piece, while notes from other scales (say, the C minor scale) seem to be extraneous.
+\end{itemize}
+
+Given a piece of sheet music we can devise its key as follows:
 \begin{enumerate}
     \item Through the number of flats / sharps we restrict ourselves to 2 key signatures: a major one and a minor one.
-    \item The tonic can help us do the final discrimination. Usually the tonic note is located at the beginning / end of the piece either in the lower or upper parts.
+    \item The tonic can help us do the final discrimination. Usually the tonic note is located at the beginning / end of the piece either in the lower or upper parts (as we want to look for the piece\emph{resolution}, often the tonic can be devised from the last note).
 \end{enumerate}
+
+\section{Diatonic scale / modes}
+\begin{definition}[Diatonic scale]
+    A collection of all the seven note pitches in order.
+\end{definition}
+
+The diatonic scale can be thought as a \emph{meta-scale}. Its general formula is any shift of the major scale formula, thus we have 7 possible diatonic scale \textbf{modes}.
+
+\begin{definition}[Diatonic mode]
+    A specific instance of a diatonic scale.
+\end{definition}
+
+In fact, both the major scale and the (natural) minor scale are diatonic modes. The diatonic modes are called through greek names, where {\color{OrangeRed}Ionian} and {\color{RoyalBlue}Aeolian} are the major and (natural) minor scales, respectively.
+
+\begin{center}
+    \begin{tabular}{r|c|l}
+        \textbf{Mode} & \textbf{Intervals sequence} & \textbf{Example with white keys} \\
+        \hline
+        {\color{OrangeRed}Ionian} & $W-W-H-W-W-W-H$ & $C-D-E-F-G-A-B$ \\ 
+        Dorian & $W-H-W-W-W-H-W$ & $D-E-F-G-A-B-C$ \\
+        Phrygian & $W-W-H-W-W-W-H$ & $E-F-G-A-B-C-D$ \\
+        Lydian & $W-H-W-W-W-H-W$ & $F-G-A-B-C-D-E$ \\
+        Mixolydian & $H-W-W-W-H-W-W$ & $G-A-B-C-D-E-F$ \\
+        {\color{RoyalBlue}Aeolian} & $W-W-W-H-W-W-H$ & $A-B-C-D-E-F-G$ \\
+        Locrian & $W-W-H-W-W-H-W$ & $B-C-D-E-F-G-A$ \\
+    \end{tabular}
+\end{center}
+
+\section{Scale degrees and functions}
+In a scale there are seven scale degrees, each of them with a different name.
+
+These are the three most important degrees:
+\begin{itemize}
+    \item $\hat 1$ / \textbf{Tonic}: the center of gravity of a tonal piece of music. Often it ends a piece of music in a given key, which is identified exactly by that tonic.
+    \item $\hat 5$ / \textbf{Dominant}: mainly used as a springboard to the tonic.
+    \item $\hat 3$  / \textbf{Mediant}: it was used as an helper towards the dominant.
+    \item $\hat 2$ \textbf{Supertonic}: can also be used as a \emph{dominant to a dominant}, also called a \textbf{secondary dominant}.
+    \item $\hat 7$ / \textbf{Leading tone}: is the most unstable scale degree, which has a strong tendency to resolve to the tonic.
+    \item $\hat 4$ / \textbf{Subdominant}: can be both stable or unstable.
+    \begin{itemize}
+        \item Dominant context $\Rightarrow$ unstable (wants to resolve to $\hat 3$).
+        \item Tonic context $\Rightarrow$ stable ($\hat 3$ is its leading tone).
+    \end{itemize}
+\end{itemize}
+Together, these 3 scale degrees form the \textbf{tonic triad}, which is the center of the \emph{harmony} (while the tonic is the center of the \emph{melody}).
+
+\begin{definition}[Tonic triad]
+    The triad formed by the $\hat 1, \hat 3, \hat 5$ scale degrees.
+\end{definition}
+
+Instead, if we build the triad on the \emph{dominant}, we gather the \textbf{dominant triad}, which strongly wants to resolve to the tonic (triad). The \textbf{mediant triad} instead often sounds pretty stable.
+
+\begin{definition}[Dominant triad]
+    The triad built on the $\hat 5$ scale degree.
+\end{definition}
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=\textwidth]{img/degrees}
+        \caption{Scale degree names}
+    \end{center}
+\end{figure}
+
+\section{Chromatic alterations}
+When we use notes which are outside of our scale we are doing chromatic alterations. This may have two different purposes:
+\begin{itemize}
+    \item \textbf{Modal mixture}. In modern music theory this is often referred just as \emph{extended tonality}.
+    \item Introducing different leading tones (even for scale degrees different than $\hat 7 \to \hat 1$).
+\end{itemize}
+
+\begin{definition}[Modal mixture]
+    Using a note from a different mode.
+\end{definition}
