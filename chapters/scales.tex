@@ -66,13 +66,6 @@ The scale is called \emph{melodic} minor because it shows its purpose during mel
 \subsection{Key signatures}
 In respect to the major keys, minor keys can be derived by adding 3 flats (or subtracting sharps and adding flats if needed).
 
-\begin{figure}
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{img/parallel}
-        \caption{Parallel relationship}
-    \end{center}
-\end{figure}
-
 In doing so, the corresponding major scale will also have three of its scale degrees lowered, resulting in what is called a \textbf{parallel} minor scale.
 
 \begin{definition}[Parallel scale relationship]
@@ -86,10 +79,26 @@ On the other hand, if it is the key signature to be shared, then we call it a \t
 \end{definition}
 
 \section{Circle of fifths}
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/parallel}
+        \caption{Parallel relationship}
+    \end{center}
+\end{figure}
+
 The circle of fifths is a convenient aid for the visualization of both minor and major keys and scales:
 \begin{itemize}
     \item To the right, we add sharps / remove flats and we go up a $5^{th}$.
     \item To the left, we remove sharps / add flats and we go down a $5^{th}$.
+\end{itemize}
+It also provides some interesting insights into the key structure:
+\begin{itemize}
+    \item Given a note, the next note clockwise is its dominant.
+    \item Given two adjacent keys, their scales share $\frac 6 7$ of the notes (e.g. C Major and G Major differ only by the F\#).
+    \item In 18th century music often a key modulated itself only to the its 5 other neighboring keys (because they shared $\frac{6}{7}$ notes). These keys and its relative minor are the 6 most \emph{closely related keys}, while others are said to be \emph{distantly related}. In fact, the key on the opposite side of the circle of fifths is said to be the most distantly related.
+    
+    Beethoven was one of the first composer to deviate from this trend.
 \end{itemize}
 
 \begin{figure}
@@ -120,6 +129,8 @@ Given a piece of sheet music we can devise its key as follows:
 \begin{definition}[Key modulation]
     A temporary change of keys.
 \end{definition}
+
+A key modulation can be notated with a text marking like $G:5$, which indicates a modulation to the $G$ as the tonic for the following measures.
 
 A key modulation may or may not be highlighted by a key signature change in the sheet music. When this happens, usually a note or chord is used as a \emph{pivot} for the key modulation; said note or chord is usually in common between the two keys (albeit maybe with different roles).
 
