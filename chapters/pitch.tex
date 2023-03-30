@@ -1,0 +1,54 @@
+\section{Sound properties}
+A \textbf{sound} is just a bunch of air particles which vibrate really quickly into thin air. They do so on \emph{longitudinal} waves. The vibration in the air is produced by some sort of vibrating device (e.g. the membrane of a PC speaker) and captured by some other device (like the membranes into our ears). In the case of our ears, the brain processes the captured vibrations into sound perceptions.
+
+The number of vibrations per second is expressed through the \textbf{frequency} $f$, expressed in \emph{Hertz}. Higher frequencies produce higher sounds. Conversely, if the signal has a bigger \textbf{amplitude} it is perceived as a louder sound. The timbre is instead related to the overall waveform shape and therefore to the Fourier representation of the signal.
+
+Therefore, to summarise:
+\begin{itemize}
+    \item \textbf{Frequency} translates to \textbf{pitch}.
+    \item \textbf{Amplitude} translates to \textbf{volume}.
+    \item \textbf{Waveform shape} translates to \textbf{timbre}.
+\end{itemize}
+
+\section{Pitch}
+Unfortunately, the relationship between frequency and pitch is nonlinear. In fact, it is \emph{exponential}.
+
+Moving in octaves (in pitch space) to us feels like a linear increase, while in frequency the same movement is exponential (or also, the frequency increase is linear, but the pitch increase is logarithmic). As an example moving a sound to the next note involves \emph{doubling} its frequency.
+
+Therefore, if we express as $s$ the multiplicative factor used to scale the frequency so as to obtain the corresponding pitch raised by a semitone:
+
+$$s^{12} = 2 \Rightarrow s = 2^{\frac{1}{12}}$$
+
+For translating a given pitch into a frequency we can use the following:
+
+$$f = f_\textbf{C0} \cdot 2^{o+\frac{p}{12}}$$
+
+Where $p$ is the number of semitones from the $C$ pitch class and $o$ is the number of octaves.
+
+The reverse can be computed through logarithms and fixed / fractional part functions.
+
+Nevertheless, from this we gather a pretty interesting result: \textbf{the pitch we perceive as a linear increase translates in reality as an exponential increase in frequency}.
+
+This means that the most interesting octaves in music (C0 - C10) are effectively translated to a very narrow set of frequencies, up to 1000 Hz.
+
+\subsection{Pitch class and octave equivalence}
+The set of C pitches is called the \emph{C pitch class}. This can be generalized.
+
+\begin{definition}[Pitch class]
+    A pitch without its octave.
+\end{definition}
+
+We recognize pitches which share the same pitch class as different instances of the same note. In fact, these pitches are $n$ octaves apart so we should say that we recognize pitches \emph{which are $n$ octaves apart} as different instances of the same note.
+
+Why is this so? This is because the waveforms of two notes from an octave interval perfectly line up together.
+
+If we make an equivalence relation out of the notion of \emph{pitch space modulo octave equivalence} we are able to obtain the \textbf{pitch class space}.
+
+\subsection{Temperament}
+The modern western musical system is said to be a \textbf{12-tone equal-tempered} one.
+
+\begin{definition}[12-tone equal-temperament]
+    A musical system in which an octave is subdivided into a set of 12 equal semitones (equal = there is a constant amount between every semitone in pitch space).
+\end{definition}
+
+However, more than two centuries ago, composers actually used systems which were not equally-tempered. The semitones had different sizes across the octave, therefore leading to uneven intervals, be it for the better or for the worse. In fact, some of these intervals sound \emph{better} than their equally-tempered counterparts; however, these intervals lead to inconsistencies into other intervals / parts of the octave, which sound drastically worse than their equally-tempered counterparts (these intervals were called \textbf{wolf intervals}).
